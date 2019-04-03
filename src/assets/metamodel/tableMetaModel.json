@@ -1,0 +1,30 @@
+{
+    "metamodel":{
+        "title": "TableMetaModel",
+        "name": "tableMetaModel",
+        "showHeader":true,
+        "resource":"res",
+        "sections": [
+            {
+              "properties":[
+                {
+                    "type": "table",
+                    "metamodel": "tableSummary",
+                    "addItemButton": true,
+                    "alias": "quotes"
+                }
+            ]
+              
+            }
+          ]     
+    },
+    "resources":[
+        {
+            "alias": "quotes",
+            "baseURI": "base",
+            "pathToResource":[]
+
+        }
+    ]
+    
+}

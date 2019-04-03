@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { OcInfraModule } from '@diaas/ux-web';
 
 import { CommonService } from '../app/services/common.service';
-import { MyLoginComponent } from 'src/app/components/my-login/my-login.component';
 import { LoginComponent } from 'src/app/components/login/login.component';
 
 @NgModule({

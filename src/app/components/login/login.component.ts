@@ -19,7 +19,8 @@ export class LoginComponent implements OnInit {
       console.log("thanh");
     }
     else {
-      ErrorHandling.event.emit('Check Username or Password, incorrect Credentials !');
+      console.log("hhuhuhhu")
+     
     }
   }
 

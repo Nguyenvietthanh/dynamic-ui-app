@@ -1,0 +1,25 @@
+{
+    "metamodel": {
+        "title": "TableSummary",
+        "name": "tableSummary",
+        "summary": true,  
+                "properties": [
+                    {
+                        "id": "quote-status",
+                        "label": "Identifier",
+                        "type": "label"
+                    },
+                    {
+                        "id": "quote-doc-id",
+                        "label": "Product ID",
+                        "type": "label"
+                    },
+                    {
+                        "id": "quote-country-indicator",
+                        "label": "Distributor ID",
+                        "type": "label"
+                    }
+                ]
+        
+    }
+}
