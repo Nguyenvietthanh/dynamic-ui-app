@@ -1,0 +1,159 @@
+$csc-color: #ef2525;		
+$primary-color-shadow-4: #0e283a;		
+$primary-color-shadow-3: #0F3A57;		
+$primary-color-shadow-2: #175782;		
+$primary-color-shadow-1: #1f74ad;		
+$primary-color: #3498db;		
+$primary-color-tint-1: #52a7e0;		
+$primary-color-tint-2: #7dbde8;		
+$primary-color-tint-3: #a8d3f0;		
+$primary-color-tint-4: #ddedf9;		
+$transparent: transparent;
+$oc-light-grey: #ebeef2;
+$oc-grey:#707070 ;
+$oc-pagination-color:#d7dbe3;
+$oc-text-focus:#66afe9;
+$oc-text-border:#C8C8C8;
+$oc-grey-tint-1:#999999;
+$oc-grey-tint-2 :#D7DADF;
+$oc-grey-tint-3: #c3c6cc;
+$oc-grey-tint-4:#E5E6EA;
+$oc-grey-tint-5:#3B4254;
+$oc-div-color:#b9b9b9;
+$oc-switch-label:#f2f2f2;
+$oc-table-border:#eee;
+		
+$accent-color-sunshade-shadow-1: #f1800e;		
+$accent-color-sunshade-shadow-2: #c1660b;		
+$accent-color-sunshade-shadow-3: #914d08;		
+$accent-color-sunshade-shadow-4: #503216;		
+$accent-color-sunshade: #f49b41;		
+$accent-color-sunshade-tint-1: #f7b36e;		
+$accent-color-sunshade-tint-2: #f9cc9f;		
+$accent-color-sunshade-tint-3: #fce6cf;		
+$accent-color-sunshade-tint-4: #fdf1e5;		
+		
+$accent-color-sorbus-shadow-1: #cb441a;		
+$accent-color-sorbus-shadow-2: #9e3315;		
+$accent-color-sorbus-shadow-3: #71260f;		
+$accent-color-sorbus-shadow-4: #5e2a1a;		
+$accent-color-sorbus: #e6653e;		
+$accent-color-sorbus-tint-1: #ea8161;		
+$accent-color-sorbus-tint-2: #f0a582;		
+$accent-color-sorbus-tint-3: #f6c9bb;		
+$accent-color-sorbus-tint-4: #fceae5;		
+		
+$shades-of-gray-shadow-1: #848a93;		
+$shades-of-gray-shadow-2: #6a6e76;		
+$shades-of-gray-shadow-3: #55585e;		
+$shades-of-gray-sorbus-shadow-4: #44464b;		
+$shades-of-gray: #a5adb8;		
+$shades-of-gray-tint-1: #c5cad1;		
+$shades-of-gray-tint-2: #dadde1;		
+$shades-of-gray-tint-3: #e7e9ec;		
+$shades-of-gray-tint-4: #f0f1f3;		
+		
+$accent-color-light-sea-green-shadow-1: #159d82;		
+$accent-color-light-sea-green-shadow-2: #0f705d;		
+$accent-color-light-sea-green-shadow-3: #094338;		
+$accent-color-light-sea-green-shadow-4: #093e33;		
+$accent-color-light-sea-green: #1abc9c;		
+$accent-color-light-sea-green-tint-1: #35e3c1;		
+$accent-color-light-sea-green-tint-2: #62eace;		
+$accent-color-light-sea-green-tint-3: #8ff0dc;		
+$accent-color-light-sea-green-tint-4: #e1f6f1;		
+		
+		
+$default-color-select: #5E80AD;		
+		
+$element-active:  $primary-color;		
+$element-hover: #000099;		
+$required-field: #fdfdd0;		
+$required-field-asterisk:  #ef2525;		
+$incomplete-checkbox : #ef2525;		
+$white-text : #ffffff;		
+$completed-checkbox: #2fa12f;	
+
+
+
+
+$oc-text-comp-input-active-color: #55585e;
+$oc-text-comp-input-blue: #3498db;
+$oc-text-comp-input-hover: #55585e;
+$oc-text-comp-input-disabled: #a5adb8;
+$oc-text-comp-input-disabled-bgcolor: #dadde1;
+$oc-text-comp-input-invalid-border: #ef2525;
+$oc-text-comp-input-invalid-bgcolor: #dadde1;
+$oc-text-comp-input-required-bgcolor: #fdfdd0;
+$oc-text-comp-input-required-boder: #a5adb8;
+$oc-text-comp-input-required-focus-bgcolor: #fff;
+
+$alert-color:#d59b20;
+$oc-wizard-box-shadow: rgba(196, 196, 196, 1);
+$oc-wizard-done: #27ae60;
+$oc-dark-grey: #333333;
+$oc-table-border: #ccc; 
+$custom-table-bgcolor:#f9f9f9;
+$custom-pagination-span:#888;
+$custom-pagination-button-hover:#e6e6e6;
+$custom-pagination-disabled:#cacaca;
+$custom-pagination-span-hover:#F7F7F7;
+$custom-table-thead: #dddddd;
+$fa-icon:#2199e8;
+$table-td-negative:#B1504A;
+$table-td-error:#a94442;
+$table-striped-odd: #b15654;
+$table-striped-even:#dc7675;
+$oc-black:#000000;
+$table-summary:#bfccdd;
+$table-stripe-odd: #99a4b2;
+$table-striped-bordered-odd:#99a4b2;
+$oc-label-color:#292b2c;
+$oc-hover-button-bg:#4f88a1 ;
+
+
+
+		
+$Highlighted-table-row-odd:$primary-color-tint-3;		
+$Highlighted-table-row-even: $primary-color-tint-4; 		
+		
+$hover-button-bg: $oc-hover-button-bg;		
+
+$backdrop:rgba(255, 255, 255, 0.5);
+
+// a{ color: $element-active;}	
+	
+// *:not(i){ font-family: "Open Sans" ;		
+// }		
+// input, button, select, optgroup, textarea{		
+//     font-family: "Open Sans" !important;		
+// }		
+// h1,h2,h3,h4,h5,h6{ 		
+//     font-style: normal;		
+// }		
+// h1{ font-size: 36px;}		
+// h2{ font-size: 30px;}		
+// h3{font-size: 24px;}		
+// h4{ font-size: 19px;}		
+// h5{font-size: 14px;}		
+// h6{font-size: 12px;}		
+		
+// label{		
+//     float: left;		
+//     text-transform: capitalize;		
+//     font-weight: bold;		
+// } 
+
+// .form-label-required:before{
+// 	/*to add requried mark dynamically before a label*/
+// 	content: ' *';
+// 	color: $required-field-asterisk;
+// 	font-size: 16px;
+// 	font-weight: bold;
+// 	position: relative;
+// 	top: -5px;
+// 	vertical-align: middle;
+// 	padding-right: 2px;
+// }
+
+// btn//

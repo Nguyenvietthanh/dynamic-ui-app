@@ -1,0 +1,91 @@
+@import "./general-style.scss";
+@import "./customstyles.scss";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.logo-icon {
+  background-image: url("./images/dxc_logo.png" );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
+  width: 400px;
+  height: inherit;
+  margin-left: 15px;
+}
+
+.pull-right{
+  margin: 10px !important;
+}
+
+.container {
+  padding: 3%;
+}
+
+.lightGreenBtn {
+  background: #94E1D9 !important;
+  border-color: #94E1D9 !important;
+  border-radius: 20px !important;
+  color: black !important;
+  margin: auto;
+}
+
+.lightRedBtn{
+  background: #df6250!important;
+  color: white !important;
+  border-radius: 20px;
+}
+
+/* Overriding FW css properties - temp fix as FW CSS properties are not getting applied*/
+div.mat-input-infix {
+  border-bottom: 1px solid #BDBDBD;
+  input {
+    padding-left: 8px;
+  }
+  margin-bottom: 10px;
+  background: #f7f7f7;
+}
+
+.mar-l-1per{
+  margin-left:0.5%;
+}
+
+.mat-dialog-title{
+  margin: auto !important;
+  padding: 10px !important;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.mat-dialog-content{
+  border-top: 1px solid grey !important;
+  margin: auto !important;
+}
+
+.container__message{
+  text-align: left !important;
+}
+
+.alert-danger{
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.mat-button-focus-overlay {
+  background: transparent !important;
+}
+
+/*Css Fix for Datepicker popup Alignment
+*/
+.mat-input-underline{
+  visibility: hidden !important;
+  z-index: -25;
+}
+
+.mat-form-field-underline {
+  display: inherit !important;
+}
+
+.mat-datepicker-toggle > .mat-icon-button {
+  width: 25px !important;
+  right: 10px;
+  top: 2px;
+}
+/*Datepicker issue ends */

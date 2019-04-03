@@ -1,0 +1,23 @@
+{
+  "metamodel": {
+    "title": "Login",
+    "name": "login", 
+    "sections": [
+      {
+        "class": "customback1",
+        "properties": [
+          { 
+            "class": "customback",
+            "type":"custom",
+            "selector":"app-login"
+          }
+          
+         
+        ]
+        
+      }
+    ]
+    
+  }
+  
+}
