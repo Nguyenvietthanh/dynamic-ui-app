@@ -2,24 +2,28 @@
     "metamodel": {
         "title": "TableSummary",
         "name": "tableSummary",
-        "summary": true,  
-                "properties": [
-                    {
-                        "id": "quote-status",
-                        "label": "Identifier",
-                        "type": "label"
-                    },
-                    {
-                        "id": "quote-doc-id",
-                        "label": "Product ID",
-                        "type": "label"
-                    },
-                    {
-                        "id": "quote-country-indicator",
-                        "label": "Distributor ID",
-                        "type": "label"
-                    }
-                ]
-        
+        "summary": true,
+        "properties": [
+            {
+                "id": "quote-identifier",
+                "label": "Identifier",
+                "type": "label"
+            },
+            {
+                "id": "quote-product-id",
+                "label": "Product ID",
+                "type": "label"
+            },
+            {
+                "id": "quote-distributor-id",
+                "label": "Distributor ID",
+                "type": "label"
+            },
+            {
+                "icon": "editor",
+                "label": "Actions",
+                "type": "icon"
+            }
+        ]
     }
 }

@@ -5,6 +5,8 @@ import { OcInfraModule } from '@diaas/ux-web';
 
 import { CommonService } from '../app/services/common.service';
 import { LoginComponent } from 'src/app/components/login/login.component';
+import { PagenumberComponent } from 'src/app/components/pagenumber/pagenumber.component';
+import { SearchComponent } from 'src/app/components/search/search.component';
 
 @NgModule({
   imports: [
@@ -13,9 +15,9 @@ import { LoginComponent } from 'src/app/components/login/login.component';
     CommonModule
   ],
   // tslint:disable-next-line:max-line-length
-  declarations: [LoginComponent],
+  declarations: [LoginComponent,PagenumberComponent,SearchComponent],
   // tslint:disable-next-line:max-line-length
-  exports: [LoginComponent],
+  exports: [LoginComponent,PagenumberComponent,SearchComponent],
   providers: [
     CommonService
   ]

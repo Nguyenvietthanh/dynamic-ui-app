@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   }
   login():void{
     if(this.userName==='agent@csc.com'&& this.passWord==='agent'){
-      OcInfraModule.AppInjector.get(NavigationService).navigateTo("screen/dashboard");
+      OcInfraModule.AppInjector.get(NavigationService).navigateTo("screen/tableMetaModel");
       console.log("thanh");
     }
     else {

@@ -2,4 +2,28 @@
     margin-left: 31em;
 }
 
+table>thead>tr>th{
+    background-color: black;
+    padding: 24px !important;
+    margin: 10px;
+    width: 200px !important;
+
+}
+button.mat-sort-header-button{
+    color: white !important;
+}
+table>tbody>tr>td{
+    padding: 24px !important;
+    margin: 10px;
+    width: 200px !important;
+}
+
+.custompage{
+    margin-left: 47em;
+    margin-top: 12px;
+}
+.customtable{
+    margin-left: 8em;
+}
+
 

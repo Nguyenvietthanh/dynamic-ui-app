@@ -31,7 +31,7 @@ export const ocInfraConfig: OcInfraConfig = {
   loginPage: '/',
   logoutPage: '/logout',
   landingPage: 'dashboard',
-  navegableScreens :[{"menu":"Home"}],
+  
   themes: ['dxc'],
   SOR: 'Integral',
   dateOptions: {

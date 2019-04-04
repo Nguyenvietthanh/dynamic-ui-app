@@ -1,0 +1,156 @@
+body {
+    text-align: center;
+    background: black;
+}
+
+p {
+    color: #ddd;
+    font-family: Helvetica;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    
+    font-family: Helvetica;
+}
+
+a,
+span {
+    font-size: 20px;
+}
+
+svg {
+    width: 130px;
+    height: 40px;
+}
+
+
+/* THE ROUND PSEUDO-ELEMENT HOVER STYLES */
+.round,
+.svg,
+.highlight {
+    max-width: 960px;
+    margin:0 auto;
+}
+
+.round a {
+    color: crimson;
+}
+
+.round .button {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid crimson;
+    transition: color .5s;
+}
+
+.round .button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #CCCCCC;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.round .button:hover {
+    color: #222222;
+}
+
+.round .button:nth-child(1):before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.round .button:nth-child(1):hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.round .button:nth-child(2):before {
+    left: -30px;
+    bottom: 100%;
+    transition: all .7s;
+}
+
+.round .button:nth-child(2):hover:before {
+    bottom: -50px;
+}
+
+.round .button:nth-child(3):before {
+    top: 0;
+    left: -200%;
+    transition: all .7s;
+}
+
+.round .button:nth-child(3):hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+
+
+
+@keyframes draw1 {
+    0% {
+        stroke-dasharray: 300;
+        stroke-dashoffset: 700;
+        stroke-width: 4px;
+    }
+    75% {
+        stroke-dasharray: 900;
+        stroke-width: 1px;
+    }
+    100% {
+        stroke-dasharray: 900;
+        stroke-width: 1px;
+    }
+}
+
+@keyframes draw2 {
+    0% {
+        stroke-dashoffset: 350;
+        stroke-dasharray: 350;
+    }
+    50% {
+        stroke-dashoffset: 600;
+        stroke-dasharray: 400;
+        stroke-width: 1px;
+    }
+    100% {
+        stroke-dashoffset: 900;
+        stroke-dasharray: 400;
+        stroke-width: 1px;
+    }
+}
+
+@keyframes draw3 {
+    100% {
+        transform: scale(1.35);
+    }
+}
+
+
+.login-title {
+    color: black !important;
+    font-weight: normal;
+        margin-right: 38px;
+}
+.login-field {
+  margin-top: 10px;
+ }
+
+
+
+
+
