@@ -4,9 +4,10 @@
         "name": "tableMetaModel",
         "showHeader": true,
         "resource": "res",
-        "class":"thanhkyte",
-        "sections": [
+       
+        "sections": [ 
             {
+               
                 "properties": [
                     {
                         "class": "col-md-12",
@@ -16,16 +17,14 @@
                     {
                         "class": "col-md-12 table-hover customtable",
                         "type": "table",
+                        "pagination":true,
                         "metamodel": "tableSummary",
                         "alias": "quotes"
-                    },
-                    {
-                        "class": "col-md-12 custompage",
-                        "type": "custom",
-                        "selector": "app-pagenumber"
+                        
                     }
                 ]
             }
+            
         ]
     },
     "resources": [
@@ -36,3 +35,4 @@
         }
     ]
 }
+

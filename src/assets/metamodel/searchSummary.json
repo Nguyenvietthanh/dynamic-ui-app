@@ -1,0 +1,28 @@
+{
+    "metamodel": {
+      "title": "SearchSummary",
+      "name": "searchSummary",
+      "sections": [
+        {
+          
+          "properties": [
+            {
+              "id": "quote-identifier",
+              "type": "text",
+              "label": "Identifier"
+            },
+            {
+                "id": "quote-product-id",
+              "type": "text",
+              "label": "Product ID"
+            },
+            {
+                "id": "quote-distributor-id",
+                "type": "text",
+                "label": "Distributor ID"
+              }
+          ]
+        }
+      ]
+    }
+}

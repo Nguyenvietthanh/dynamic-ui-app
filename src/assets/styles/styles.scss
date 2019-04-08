@@ -1,6 +1,12 @@
 @import "./general-style.scss";
 @import "./customstyles.scss";
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.testback{
+  background-image: url("./images/butler-hand.jpg") ;
+  background-size: cover;
+    background-repeat: no-repeat;
+
+}
 .logo-icon {
   background-image: url("./images/dxc_logo.png" );
   background-repeat: no-repeat;
