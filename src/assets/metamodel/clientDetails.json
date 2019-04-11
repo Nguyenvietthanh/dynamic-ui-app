@@ -1,0 +1,80 @@
+{
+    "metamodel": {
+      "title": "ClientDetails",
+      "name": "clientDetails",
+      "sections": [
+        {
+          "class": "",
+          "properties": [
+            {
+              "id": "",
+              "class": "clientLabel commonLabel",
+              "type": "label",
+              "label": "Client's Full Name"
+            },
+            {
+              "id": "",
+              "class": "givenNameText commonText",
+              "type": "text",
+              "label": "Given Name *"
+            },
+            {
+              "id": "",
+              "class": "lastNameText commonText",
+              "type": "text",
+              "label": "Last Name *"
+            }
+          ]
+        },
+        {
+          "class": "",
+          "properties": [
+            {
+              "id": "",
+              "class": "dateLabel commonLabel",
+              "type": "label",
+              "label": "Date of Birth"
+            },
+            {
+              "id": "",
+              "class": "dateOfBirthText commonText",
+              "type": "date",
+              "label": "Date of Birth *",
+              "placeholder": "dd/MM/yyyy"
+            }
+          ]
+        },
+        {
+          "class": "",
+          "properties": [
+            {
+              "id": "",
+              "class": "genderLabel commonLabel",
+              "type": "label",
+              "label": "Gender"
+            }
+          ]
+        },
+        {
+          "class": "",
+          "properties": [
+            {
+              "id": "",
+              "class": "occupationLabel commonLabel",
+              "type": "label",
+              "label": "Occupation"
+            },
+            {
+              "id": "",
+              "class": "autoText commonText",
+              "type": "autocomplete",
+              "placeholder": "Enter Occupation",
+              "option":{
+                "getData": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }

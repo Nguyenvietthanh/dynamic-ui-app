@@ -39,5 +39,63 @@ table>tbody>tr>td{
 
 }
 
+.commonLabel{
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px;
+    width: 600px;
+    height: 400px;
+    left: 250px;
+    position: absolute;
+}
+
+.commonText{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    left: 400px;
+
+}
+
+.index{
+    color: red;
+}
+
+.clientLabel{
+    top: 100px;
+    background-image: url("./images/name.jpg");
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    
+}
+.givenNameText,.lastNameText{
+    top: 450px;
+    left: 255px;
+    
+}
+.lastNameText{
+    left: 555px;
+}
+
+.dateLabel{
+    top: 600px;
+}
+
+.dateOfBirthText{
+    top: 950px;
+}
+
+.genderLabel{
+    top: 1100px;
+}
+
+.occupationLabel{
+    top: 1600px;
+}
+
+.autoText{
+    top: 1950px;
+}
+
 
 
