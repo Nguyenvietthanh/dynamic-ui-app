@@ -1,60 +1,59 @@
-
-  <div class="row">
-    <div class="col-sm-4 round" style="
+<div class="row">
+  <div class="col-sm-4 round" style="
     margin-left: 82px;">
-      <a class="button" href="#" style="text-align: center">Create</a>
-    </div>
-    <div class="col-sm-4 round">
-    </div>
-    <div class="col-sm-4 round">  
-    </div>
+    <a class="button" href="#" style="text-align: center">Create</a>
   </div>
-  <div class="row">
-    <div class="col-sm-4" style="
+  <div class="col-sm-4 round">
+  </div>
+  <div class="col-sm-4 round">
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4" style="
     margin-left: 106px;">
-      <p style="color: black;size: 18px; border: 10px">Search</p>
-    </div>
+    <p style="color: black;size: 18px; border: 10px">Search</p>
   </div>
-  <div class="row" style="
+</div>
+<div class="row" style="
   margin-left: 90px;">
-    <div class="col-sm-4">
-      <div class="login-title">
-        Quote Number
-      </div>
-      <div class="login-field">
-        <input type="text">
-      </div>
+  <div class="col-sm-4">
+    <div class="login-title">
+      Identifier
     </div>
-    <div class="col-sm-4">
-      <div class="login-title">
-        Product ID
-      </div>
-      <div class="login-field">
-        <input type="text" disabled>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="login-title">
-        Distributor ID
-      </div>
-      <div class="login-field">
-        <input type="text">
-      </div>
+    <div class="login-field">
+      <input type="text" [(ngModel)]="id">
     </div>
   </div>
-  <div class="row" style="
+  <div class="col-sm-4">
+    <div class="login-title">
+      Product ID
+    </div>
+    <div class="login-field">
+      <input type="text" disabled>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="login-title">
+      Distributor ID
+    </div>
+    <div class="login-field">
+      <input type="text" [(ngModel)]="distributorId">
+    </div>
+  </div>
+</div>
+<div class="row" style="
   margin-left: 57px;
 ">
-    <div class="col-sm-4">
-    </div>
-    <div class="col-sm-4 round" style="
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-4 round" style="
     margin-right: -149px;
 ">
-        <a class="button" href="#"style="text-align: center">Reset</a>
-    </div>
-    <div class="col-sm-4 round" style="
-    margin-right: -37px;
-">  
-        <a class="button" href="#" style="text-align: center" (click)="search()">Search</a>  
-    </div>
+    <button class="button" (click)="reset()">Reset</button>
   </div>
+  <div class="col-sm-4 round" style="
+    margin-right: -37px;
+">
+    <button class="button" (click)="search()">Search</button>
+  </div>
+</div>

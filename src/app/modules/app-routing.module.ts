@@ -5,7 +5,7 @@ import { RendererComponent } from '@diaas/ux-web';
 
 const routes: Routes = [
   { path: 'screen/:screenId', component: RendererComponent },
-  { path: '**', redirectTo: 'screen/login' },
+  { path: '**', redirectTo: 'screen/tableMetaModel' },
 ];
 
 @NgModule({

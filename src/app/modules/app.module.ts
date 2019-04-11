@@ -17,6 +17,7 @@ import { MatDialogModule, MatCheckboxModule, MatSelectModule } from '@angular/ma
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 import { CommonService } from '../services/common.service';
+import { PaginationService } from '../services/pagination.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -47,7 +48,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
   ],
   providers: [
-    CommonService
+    CommonService,
+    PaginationService,
   ],
   bootstrap: [AppComponent],
   entryComponents: [],

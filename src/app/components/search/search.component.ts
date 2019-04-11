@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { OcInfraModule, ResourceService } from '@diaas/ux-web';
+import { ResourceService, OcInfraModule } from '@diaas/ux-web';
+
 
 @Component({
   selector: 'app-search',
@@ -7,14 +8,15 @@ import { OcInfraModule, ResourceService } from '@diaas/ux-web';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-  
   private id='';
   private distributorId='';
   private quote = 'https://apig.everest.dxchub.com/evdev/omni-new-business-services/omni/service/quotes';
+
   constructor() { }
 
   ngOnInit() {
   }
+
   search(): void {
 
 
@@ -31,6 +33,7 @@ export class SearchComponent implements OnInit {
     OcInfraModule.AppInjector.get(ResourceService).updateCreateAliasName('quotes',
       this.quote, true);
       console.log(this.quote);
+      
     this.quote = 'https://apig.everest.dxchub.com/evdev/omni-new-business-services/omni/service/quotes';
   }
 

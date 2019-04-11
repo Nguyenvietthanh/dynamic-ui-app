@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PaginationService } from 'src/app/services/pagination.service';
 
 @Component({
   selector: 'app-pagenumber',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagenumberComponent implements OnInit {
 
-  constructor() { }
+  constructor(private paginationService: PaginationService) { }
 
   ngOnInit() {
+    this.paginationService.callFirstPage();
   }
+  callPreviousPage(): void {
+    this.paginationService.getListQuotes(this.paginationService.setPrevPage());
+  }
+
+callNextPage(): void {
+    this.paginationService.getListQuotes(this.paginationService.setNextPage());
+}
 
 }
