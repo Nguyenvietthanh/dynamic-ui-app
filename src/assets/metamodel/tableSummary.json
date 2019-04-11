@@ -20,9 +20,21 @@
                 "type": "label"
             },
             {
-                "icon": "editor",
-                "label": "Actions",
-                "type": "icon"
+                
+            "label": "Actions",
+               "options":[
+                   {
+                    "case": "_EDIT",
+                    "factoryName": "defaultCustomFactory",
+                    "icon": "fa fa-pencil-square-o",
+                    "method": "test",
+                   "value": "edit"
+                   }
+
+               ],
+            "type": "actions"
+                
+               
             }
         ]
     }

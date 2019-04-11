@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ResourceService, OcInfraModule } from '@diaas/ux-web';
 
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -32,6 +33,7 @@ export class SearchComponent implements OnInit {
     OcInfraModule.AppInjector.get(ResourceService).updateCreateAliasName('quotes',
       this.quote, true);
       console.log(this.quote);
+      
     this.quote = 'https://apig.everest.dxchub.com/evdev/omni-new-business-services/omni/service/quotes';
   }
 

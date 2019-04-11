@@ -17,15 +17,19 @@
                     {
                         "class": "col-md-12 table-hover customtable",
                         "type": "table",
-                        "pagination":true,
-                        "metamodel": "tableSummary",
-                        "alias": "quotes"
-                        
+                        "metamodel": "tableSummary",              
+                        "alias": "quotes"                      
+                    },
+                    {
+                        "class": "col-md-12",
+                        "type": "custom",
+                        "selector": "app-pagenumber"
                     }
                 ]
             }
             
         ]
+       
     },
     "resources": [
         {
