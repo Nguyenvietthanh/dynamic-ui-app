@@ -16,27 +16,20 @@ export class PaginationService {
 
   constructor() { 
     this.apiCallerService = OcInfraModule.AppInjector.get(APICallerService);
+    //console.log(this.apiCallerService);
     this.resourceService = OcInfraModule.AppInjector.get(ResourceService);
+    //console.log(this.resourceService);
+   
   }
   getListQuotes(setPage: any): void {
     this.optionParams.params = [{ 'key': 'quote-product-id', 'value': 'Life Suite' },
                                 { 'key': '_start', 'value': setPage },
-                                { 'key': '_num', 'value': 5 }];
-    if (this.optionParams.params.length !== 3) {
+                                { 'key': '_num', 'value': 6 }];
         this.apiCallerService.refresh(AppConfig.hostURL + 'quotes', this.optionParams)
         .subscribe(response => {
-            this.count = response._links._count;
             this.resourceService.updateCreateAliasName('quotes', AppConfig.hostURL + 'quotes', true, this.optionParams);
         });
-    } else {
-        this.apiCallerService.refresh(AppConfig.hostURL + 'quotes', this.optionParams)
-        .subscribe(response => {
-            this.count = response._links._count;
-            this.resourceService.updateCreateAliasName('quotes', AppConfig.hostURL + 'quotes', true, this.optionParams);
-        });
-    }
 }
-
 setFirstPage(): string {
     localStorage.currentPage = 1;
     this.pageNumber = 1;
