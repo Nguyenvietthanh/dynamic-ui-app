@@ -52,6 +52,22 @@
               "class": "genderLabel commonLabel",
               "type": "label",
               "label": "Gender"
+            },
+            {
+                "label": "MALE",
+                "class": "genderMale commonText gender-box gender-box-male",
+                "type":"button"
+            },
+            {
+                "label": "FEMALE",
+                "class": "genderFemale commonText gender-box gender-box-female",
+                "type":"button"
+            },
+            {
+                "id": "",
+                "type": "toggle",
+                "class": "genderToggle commonText", 
+                "patchOnBlur": true
             }
           ]
         },

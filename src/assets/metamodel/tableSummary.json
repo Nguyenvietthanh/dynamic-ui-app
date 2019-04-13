@@ -28,7 +28,7 @@
                     "factoryName": "defaultCustomFactory",
                     "icon": "fa fa-pencil-square-o",
                     "method": "test",
-                   "value": "edit"
+                    "value": "edit"
                    }
 
                ],
