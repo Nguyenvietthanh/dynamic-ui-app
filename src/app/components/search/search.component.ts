@@ -35,21 +35,18 @@ export class SearchComponent implements OnInit {
                            { 'key': '_num', 'value': 5 },
                            { 'key': 'quote-product-id', 'value': 'Life Suite' }]
     if (this.quoteNumber) {
-        localStorage.setItem('quote-identifier', this.quoteNumber);
         optionParams.params.push({ 'key': 'quote-identifier', 'value': this.quoteNumber });
     }
     if (this.distributorId) {
-        localStorage.setItem('quote-distributor-id', this.distributorId);
         optionParams.params.push({ 'key': 'quote-distributor-id', 'value': this.distributorId });
     }
     this.resourceService.updateCreateAliasName('quotes', AppConfig.hostURL + 'quotes', true, optionParams);
   this.apiCallerService.refresh(AppConfig.hostURL + 'quotes', optionParams)
     .subscribe(response => {
-     // this.paginationService.countQuotes = response['_links']['_count']
-      console.log(response);
+      console.log(AppConfig.hostURL + 'quotes' +optionParams);
       this.paginationService.pageNumber = 1;
     });
-    //console.log(AppConfig.hostURL);
+   
   }
 
   reset(): void {

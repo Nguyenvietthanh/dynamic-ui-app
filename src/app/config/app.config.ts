@@ -1,5 +1,5 @@
 export const AppConfig = {
-    hostURL: 'https://apig.everest.dxchub.com/evdev/omni-new-business-services/omni/service/',
+    hostURL: 'https://evdemo.everest.dxchub.com/api2/evdemo/omni-new-business-services/omni/service/',
     headers: {
         'Content-type': 'application/json',
         'Accept': 'application/json',

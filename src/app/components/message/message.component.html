@@ -1,0 +1,20 @@
+<div style="background-color: rgb(193, 230, 252)">
+<h2 matDialogTitle style="text-align: center; text-emphasis-color: black;">Login Failt</h2>
+<mat-dialog-content>
+  <p>User or PassWord is not correct, please re-enter?</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <!--
+    Note that you can pass in anything to the `matDialogClose` attribute. This also includes objects, arrays, etc.
+    Just make sure that you make it a property binding with those [] brackets
+    Example: <button mat-button [matDialogClose]="{'lol': true}">Cancel</button>
+  -->
+  <button mat-button matDialogClose="cancel" color="primary" style="
+  margin-right: 1px;
+  padding-top: 2px;
+  margin-top: 9px;
+  background: blue;
+">Cancel</button>
+  
+</mat-dialog-actions>
+</div>

@@ -18,6 +18,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 import { CommonService } from '../services/common.service';
 import { PaginationService } from '../services/pagination.service';
+import { MessageComponent } from '../components/message/message.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -25,7 +26,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent
+    
+    AppComponent,
+    MessageComponent
   ],
   imports: [
     MatButtonToggleModule,
@@ -52,6 +55,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     PaginationService,
   ],
   bootstrap: [AppComponent],
-  entryComponents: [],
+  entryComponents: [MessageComponent],
 })
 export class AppModule { }

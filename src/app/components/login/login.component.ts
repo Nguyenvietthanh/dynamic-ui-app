@@ -1,6 +1,8 @@
 import { Component, OnInit, Inject, OnDestroy, Renderer2 } from '@angular/core';
 import { OcInfraModule, NavigationService, ErrorHandling } from '@diaas/ux-web';
 import { DOCUMENT } from '@angular/common';
+import { MatDialog } from '@angular/material';
+import { MessageComponent } from '../message/message.component';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +13,7 @@ export class LoginComponent implements OnInit,OnDestroy {
   
   userName: any;
   passWord: any;
-  constructor(@Inject(DOCUMENT) private document: Document,private renderer: Renderer2,) { }
+  constructor(@Inject(DOCUMENT) private document: Document,private renderer: Renderer2,private dialog: MatDialog) { }
 
   ngOnInit() {
     //this.document.body.classList.add('testback');
@@ -23,7 +25,13 @@ export class LoginComponent implements OnInit,OnDestroy {
       console.log("thanh");
     }
     else {
-      console.log("hhuhuhhu")
+      let dialogRef = this.dialog.open(MessageComponent);
+      dialogRef.afterClosed().subscribe(result => {
+        // NOTE: The result can also be nothing if the user presses the `esc` key or clicks outside the dialog
+        if (result == 'confirm') {
+          console.log('Unregistered');
+        }
+      })
      
     }
   }

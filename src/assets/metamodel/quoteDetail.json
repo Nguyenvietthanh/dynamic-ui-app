@@ -1,0 +1,49 @@
+{
+    "metamodel": {
+        "title": "QuoteDetail",
+        "name": "quoteDetail",
+        "showHeader": true,
+        "sections": [
+            {
+                "class": "col-lg-8 col-md-8 col-sm-8 col-xs-8 pull-left text-center quote-container",
+                "properties": [
+                    {
+                        "class": "col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center quote-details-label",
+                        "type": "label",
+                        "label": "About the Client",
+                        "visible": true
+                    },
+                    {
+                        "id": "",
+                        "label": "__CLIENT_FULL_NAME",
+                        "type": "label",
+                        "class": "col-lg-12 col-md-12 col-sm-12 col-xs-12 name-box",
+                        "visible": true
+                    },
+                    {
+                        "id": "insured-given-name",
+                        "label":"_INSURED_GIVEN_NAME",
+                        "type": "text",
+                        "class": "col-lg-6 col-md-6 col-sm-6 col-xs-6",
+                        "patchOnBlur": true,
+                        "factoryName": "quoteFactory",
+                        "alias": "insureds",
+                        "capitalize": true,
+                        "placeholder": "First name"
+                    },
+                    {
+                        "id": "insured-last-name",
+                        "label":"_INSURED_LAST_NAME",
+                        "type": "text",
+                        "class": "col-lg-6 col-md-6 col-sm-6 col-xs-6",
+                        "patchOnBlur": true,
+                        "factoryName": "quoteFactory",
+                        "alias": "insureds",
+                        "capitalize": true,
+                        "placeholder": "Last name"
+                    }
+                ]
+            }
+        ]
+    }
+}

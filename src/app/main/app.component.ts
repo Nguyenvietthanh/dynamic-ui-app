@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import { OcInfraModule, NavigationService } from '@diaas/ux-web';
+import { MatDialog } from '@angular/material';
+import { MessageComponent } from '../components/message/message.component';
 
 @Component({
   selector: 'app-root',
@@ -24,4 +26,5 @@ export class AppComponent {
       this.navigationService.navigateTo('/');
     }
   }
+ 
 }

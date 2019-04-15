@@ -7,6 +7,7 @@ import { CommonService } from '../app/services/common.service';
 import { LoginComponent } from 'src/app/components/login/login.component';
 import { PagenumberComponent } from 'src/app/components/pagenumber/pagenumber.component';
 import { SearchComponent } from 'src/app/components/search/search.component';
+import { DefaultCustomFactory } from 'src/app/factories/defaultCustomFactory';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { SearchComponent } from 'src/app/components/search/search.component';
   // tslint:disable-next-line:max-line-length
   exports: [LoginComponent,PagenumberComponent,SearchComponent],
   providers: [
-    CommonService
+    CommonService,
+    DefaultCustomFactory
   ]
 })
 export class SharedModule {
