@@ -5,11 +5,8 @@ import { RendererComponent } from '@diaas/ux-web';
 
 const routes: Routes = [
   { path: 'screen/:screenId', component: RendererComponent },
-<<<<<<< HEAD
-  { path: '**', redirectTo: 'screen/clientDetails' },
-=======
-  { path: '**', redirectTo: 'screen/login' },
->>>>>>> 9f4e2c8e0fc68f32cdd9b2b89b736cdb74ba3841
+  { path: '**', redirectTo: 'screen/clientDetails' }
+
 ];
 
 @NgModule({

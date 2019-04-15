@@ -39,6 +39,7 @@ table>tbody>tr>td{
 
 }
 
+
 .commonLabel{
     text-align: center;
     box-shadow: 1px 1px 1px 1px;
@@ -46,10 +47,15 @@ table>tbody>tr>td{
     height: 400px;
     left: 250px;
     position: absolute;
+    font-size: 16px;
+    color: black !important;
+    font-family: 'source_sans_proregular';
+    padding: 10px !important;
+    font-weight: bold;
 }
 
 .commonText{
-    width: 100%;
+    
     height: 100%;
     position: absolute;
     z-index: 10;
@@ -62,29 +68,46 @@ table>tbody>tr>td{
 }
 
 .clientLabel{
-    top: 100px;
-    background-image: url("./images/name.jpg");
-    background-repeat: no-repeat;
-    background-attachment: inherit;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: -60px;
+    background-image: url("./images/browser.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: center;
+    background-position-y: 40%;
+    padding-bottom: 10%;
     
 }
 .givenNameText,.lastNameText{
+    margin-top: -78px;
     top: 450px;
     left: 255px;
+    margin-left: 5px
     
+}
+label.mat-form-field-label.mat-empty.mat-form-field-empty {
+    color: red !important;
 }
 .lastNameText{
     left: 555px;
 }
 
 .dateLabel{
-    top: 600px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: -60px;
+    background-image: url("./images/dayof.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: center;
+    background-position-y: 40%;
+    padding-bottom: 10%;
+    margin-top: 37%!important;
 }
 
 .dateOfBirthText{
     top: 950px;
+    margin-top: -139px;
 }
-
 .genderLabel{
     top: 1100px;
 }
@@ -101,15 +124,39 @@ table>tbody>tr>td{
 
 .genderToggle{
     top: 1450px;
+    margin-top: -14em;
 }
 
 .occupationLabel{
     top: 1600px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: -60px;
+    background-image: url("./images/suitcase.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: center;
+    background-position-y: 40%;
+    padding-bottom: 10%;
+    margin-top: -22%!important;
 }
 
 .autoText{
     top: 1950px;
+    margin-top: -258px;
+    margin-left: 14px;
+    
+    
 }
+.gender-box {
+    margin-top: -185px!important;
+    margin-bottom: 0px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: -62px;
+    padding-bottom: 2%;
+}
+
+
 
 
 

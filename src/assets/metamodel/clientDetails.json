@@ -2,21 +2,25 @@
     "metamodel": {
       "title": "ClientDetails",
       "name": "clientDetails",
+      "summary": true,
+      "showHeader": true,
+        "resource": "res",
       "sections": [
         {
           "class": "",
           "properties": [
             {
-              "id": "",
-              "class": "clientLabel commonLabel",
+              
+              "class": "clientLabel commonLabel client-full-name-label_label",
               "type": "label",
               "label": "Client's Full Name"
             },
             {
-              "id": "",
+              "id": "insured-given-name",
               "class": "givenNameText commonText",
               "type": "text",
-              "label": "Given Name *"
+              "label": "Given Name *",
+              "placeholder": "First name"
             },
             {
               "id": "",
@@ -37,9 +41,9 @@
             },
             {
               "id": "",
-              "class": "dateOfBirthText commonText",
               "type": "date",
               "label": "Date of Birth *",
+              "class": "dateOfBirthText commonText",
               "placeholder": "dd/MM/yyyy"
             }
           ]
@@ -49,24 +53,33 @@
           "properties": [
             {
               "id": "",
-              "class": "genderLabel commonLabel",
+              "class": "genderLabel commonLabel gender-box",
               "type": "label",
               "label": "Gender"
             },
-            {
-                "label": "MALE",
-                "class": "genderMale commonText gender-box gender-box-male",
-                "type":"button"
+            { 
+              "class": "genderMale commonText gender-box gender-box-male title-gender",     
+              "label": "MALE",         
+              "type":"button",
+              "method":"patchFemale",
+              "factoryName":"quoteFactory",
+              "visible": true
+                
+                
             },
+            
             {
                 "label": "FEMALE",
                 "class": "genderFemale commonText gender-box gender-box-female",
-                "type":"button"
+                "type":"button",
+                "method":"patchFemale",
+                "factoryName":"quoteFactory",
+                "visible": true
             },
             {
                 "id": "",
                 "type": "toggle",
-                "class": "genderToggle commonText", 
+                "class": "genderToggle commonText  gender-toggle", 
                 "patchOnBlur": true
             }
           ]
@@ -92,5 +105,12 @@
           ]
         }
       ]
-    }
+    },
+    "resources": [
+      {
+          "alias": "insureds",
+          "baseURI": "base",
+          "pathToResource": []
+      }
+  ]
   }
