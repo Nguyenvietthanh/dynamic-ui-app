@@ -19,6 +19,7 @@
               "id": "insured-given-name",
               "class": "givenNameText commonText",
               "type": "text",
+              "alias":"insured",
               "label": "Given Name *",
               "placeholder": "First name"
             },
@@ -108,9 +109,9 @@
     },
     "resources": [
       {
-          "alias": "insureds",
-          "baseURI": "base",
-          "pathToResource": []
+          "alias": "insured",
+          "baseURI": "insureds",
+          "pathToResource": ["$._links.item[0].href"]
       }
   ]
   }
