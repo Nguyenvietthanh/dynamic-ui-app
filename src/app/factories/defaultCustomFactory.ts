@@ -28,6 +28,7 @@ export class DefaultCustomFactory  {
        
             const quoteDetails = paramsomb.href;
             
+<<<<<<< HEAD
            
             customParams.alias="quoteDetails";
             this.apiCallerService.get(quoteDetails).subscribe(async res => {
@@ -40,6 +41,17 @@ export class DefaultCustomFactory  {
     public test2(){
         console.log(this.resourceService.getHrefByAliasName('insureds'));
         console.log(this.resourceService.getHrefByAliasName('insured'));
+=======
+            console.log(quoteDetails+'/insureds');
+            customParams.alias="insureds";
+            
+           
+            this.apiCallerService.get(quoteDetails).subscribe(async res => {
+                this.resourceService.updateCreateAliasName('insureds', quoteDetails+'/insureds', true);
+                OcInfraModule.AppInjector.get(NavigationService).navigateTo('screen/clientDetails', null,customParams.alias);
+
+            })
+>>>>>>> c309d4f6059b3be0016ae4fc88ecd714b1ee9d17
     }
 
 

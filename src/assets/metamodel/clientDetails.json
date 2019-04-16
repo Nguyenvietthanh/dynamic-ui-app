@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "metamodel": {
     "title": "ClientDetails",
     "name": "clientDetails",
@@ -86,6 +87,36 @@
             "placeholder": "Enter Occupation",
             "option":{
               "getData": ""
+=======
+    "metamodel": {
+      "title": "ClientDetails",
+      "name": "clientDetails",
+      "summary": true,
+      "showHeader": true,
+        "resource": "res",
+      "sections": [
+        {
+          "class": "",
+          "properties": [
+            {
+              
+              "class": "clientLabel commonLabel client-full-name-label_label",
+              "type": "label",
+              "label": "Client's Full Name"
+            },
+            {
+              "id": "insured-given-name",
+              "class": "givenNameText commonText",
+              "type": "text",
+              "label": "Given Name *",
+              "placeholder": "First name"
+            },
+            {
+              "id": "",
+              "class": "lastNameText commonText",
+              "type": "text",
+              "label": "Last Name *"
+>>>>>>> c309d4f6059b3be0016ae4fc88ecd714b1ee9d17
             }
           }
         ]
@@ -100,6 +131,7 @@
             "visible": true
         },
         {
+<<<<<<< HEAD
             "id": "insured-annual-income",
             "label": "Annual Income *",
             "type": "number",
@@ -137,6 +169,60 @@
             "class": "smokeLabel commonLable ",
             "type": "label",
             "visible": true
+=======
+          "class": "",
+          "properties": [
+            {
+              "id": "",
+              "class": "dateLabel commonLabel",
+              "type": "label",
+              "label": "Date of Birth"
+            },
+            {
+              "id": "",
+              "type": "date",
+              "label": "Date of Birth *",
+              "class": "dateOfBirthText commonText",
+              "placeholder": "dd/MM/yyyy"
+            }
+          ]
+        },
+        {
+          "class": "",
+          "properties": [
+            {
+              "id": "",
+              "class": "genderLabel commonLabel gender-box",
+              "type": "label",
+              "label": "Gender"
+            },
+            { 
+              "class": "genderMale commonText gender-box gender-box-male title-gender",     
+              "label": "MALE",         
+              "type":"button",
+              "method":"patchFemale",
+              "factoryName":"quoteFactory",
+              "visible": true
+                
+                
+            },
+            
+            {
+                "label": "FEMALE",
+                "class": "genderFemale commonText gender-box gender-box-female",
+                "type":"button",
+                "method":"patchFemale",
+                "factoryName":"quoteFactory",
+                "visible": true
+            },
+            {
+                "id": "",
+                "type": "toggle",
+                "class": "genderToggle commonText  gender-toggle", 
+                "patchOnBlur": true
+            }
+          ]
+>>>>>>> c309d4f6059b3be0016ae4fc88ecd714b1ee9d17
         },
         {
             "id": "insured-smoking-status",
@@ -167,6 +253,7 @@
             "placeholder": "Enter Sum Assured",
             "isAmount": false
         }
+<<<<<<< HEAD
         ]
       }
     ]
@@ -193,3 +280,15 @@
     }
 ]
 }
+=======
+      ]
+    },
+    "resources": [
+      {
+          "alias": "insureds",
+          "baseURI": "base",
+          "pathToResource": []
+      }
+  ]
+  }
+>>>>>>> c309d4f6059b3be0016ae4fc88ecd714b1ee9d17
