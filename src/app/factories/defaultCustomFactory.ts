@@ -27,12 +27,19 @@ export class DefaultCustomFactory  {
        const customParams: any = {};
        
             const quoteDetails = paramsomb.href;
-            this.resourceService.updateCreateAliasName('insureds', quoteDetails+'/insureds', true);
-            console.log(quoteDetails+'/insureds');
-            customParams.alias="insureds";
-            OcInfraModule.AppInjector.get(NavigationService).navigateTo('screen/quoteDetail',quoteDetails+'/insureds',customParams.alias);
-            this.resourceService.getHrefByAliasName('insureds');
-            console.log(this.resourceService.getHrefByAliasName('insureds'));
+            
+           
+            customParams.alias="quoteDetails";
+            this.apiCallerService.get(quoteDetails).subscribe(async res => {
+                this.resourceService.updateCreateAliasName('quoteDetails', quoteDetails, true);
+                this.resourceService.getHrefByAliasName('quoteDetails');
+                OcInfraModule.AppInjector.get(NavigationService).navigateTo('screen/clientDetails',quoteDetails,customParams.alias);
+
+            })
+    }
+    public test2(){
+        console.log(this.resourceService.getHrefByAliasName('insureds'));
+        console.log(this.resourceService.getHrefByAliasName('insured'));
     }
 
 
