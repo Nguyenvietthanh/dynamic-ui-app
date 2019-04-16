@@ -30,7 +30,7 @@ export const ocInfraConfig: OcInfraConfig = {
   recaptchaSiteKey: '',
   loginPage: '/',
   logoutPage: '/logout',
-  landingPage: 'dashboard',
+  landingPage: '/tableMetaModel',
   
   themes: ['dxc'],
   SOR: 'Integral',
