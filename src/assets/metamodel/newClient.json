@@ -1,0 +1,217 @@
+{
+    "metamodel": {
+      "title": "ClientDetails",
+      "name": "clientDetails",
+      "summary": true,
+      "showHeader": true,
+      "resource": "res",
+      "sections": [
+        {
+          "class": "",
+          "properties": [
+            {
+              "class": "col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center quote-details-label",
+              "type": "label",
+              "label": "About the Client",
+              "visible": true
+            }     
+            ]
+        },
+        {
+          "class": "",
+          "properties": [
+            {
+              "class": " clientLabel commonLabel client-full-name-label_label",
+              "type": "label",
+              "label": "Client's Full Name"
+            },
+            {
+              "id": "insured-given-name",
+              "class": "  givenNameText commonText",
+              "type": "text",
+              "label": "Given Name *",
+              "placeholder": "First name"
+            },
+            {
+              "id": "insured-last-name",
+              "class": "lastNameText commonText",
+              "type": "text",
+              "label": "Last Name *",
+              "placeholder": "Last Name"
+            }
+          ]
+        },
+        {
+          "class": "",
+          "properties": [
+            {
+              "id": "",
+              "class": "dateLabel commonLabel",
+              "type": "label",
+              "label": "Date of Birth"
+            },
+            {
+              "id": "insured-date-of-birth",
+              "type": "date",
+              "label": "Date of Birth *",
+              "class": "dateOfBirthText commonText",
+              "placeholder": "dd/MM/yyyy"
+            }
+          ]
+        },
+        {
+          "class": "",
+          "properties": [
+            {
+              "id": "",
+              "class": "genderLabel commonLabel gender-box",
+              "type": "label",
+              "label": "Gender"
+            },
+            {
+              "id": "insured-gender",
+              "type": "toggle",
+              "alias": "insured",
+              "class": "genderToggle commonText  gender-toggle",
+              "patchOnBlur": true
+            }
+          ]
+        },
+        {
+          "class": "",
+          "properties": [
+            {
+              "id": "",
+              "class": "occupationLabel commonLabel",
+              "type": "label",
+              "label": "Occupation"
+            },
+            {
+              "id": "insured-occupation",
+              "class": "autoText commonText",
+              "type": "autocomplete",
+              "alias": "insured",
+              "placeholder": "Enter Occupation",
+              "option": {
+                "getData": ""
+              }
+            }
+          ]
+        },
+        {
+          "class": "",
+          "properties": [
+            {
+              "label": "Annual Income",
+              "class": "annualLabel commonLabel",
+              "type": "label",
+              "visible": true
+            },
+            {
+              "id": "insured-annual-income",
+              "label": "Annual Income *",
+              "type": "number",
+              "class": "annualText commonText",
+              "patchOnBlur": true,
+              "placeholder": "Enter Income...",
+              "isAmount": false
+            }
+          ]
+        },
+        {
+          "class": "",
+          "properties": [
+            {
+              "label": "State of Resident",
+              "class": "ResidentLable commonLabel",
+              "type": "label",
+              "alias": "insured",
+              "visible": true
+            },
+            {
+              "id": "insured-residence-state",
+              "type": "toggle",
+              "class": "residentText commonText",
+              "patchOnBlur": true
+              
+            }
+          ]
+        },
+        {
+          "class": "",
+          "properties": [
+            {
+              "label": "Has the applicant smoke in the last 12 months?",
+              "class": "smokeLabel commonLabel ",
+              "type": "label",
+              "visible":true
+             
+            },
+            {
+              "id": "insured-smoking-status",
+              "type": "radio",
+              "alias": "insured",
+              "class": "smokeText commonText",
+              "patchOnBlur": true
+              
+            }
+          ]
+        },
+        {
+          "class": "",
+          "properties": [
+            {
+              "label": "Sum Assured",
+              "class": "sumLabel commonLabel",
+              "type": "label",
+              "visible": true
+            },
+            {
+              "id": "coverage-sum-insured",
+              "type": "number",
+              "label": "Sum Insured",
+              "class": "sumText commonText",
+              "factoryName": "quoteFactory",
+              "patchOnBlur": true,
+              "placeholder": "Enter Sum Assured",
+              "isAmount": false
+            },
+            {
+              "id": "coverage-sum-insured",
+              "type": "button",
+              "label": "Calculate My Sum Assured",
+              "class": "sumButtonText commonText",
+              "factoryName": "defaultCustomFactory",
+              "method": "postNewClient"
+            }
+          ]
+        }
+    
+    ]
+  },
+  "resources": [
+    {
+      "alias": "insureds",
+      "baseURI": "quoteDetails",
+      "pathToResource": [
+        "$._links['quote:insureds'].href"
+      ]
+    },
+    {
+      "alias": "insured",
+      "baseURI": "insureds",
+      "pathToResource": [
+        "$._links.item[0].href"
+      ]
+    },
+    {
+      "alias": "LSTC",
+      "baseURI": "insured",
+      "pathToResource": [
+        "$._links['insured:coverages'].href",
+        "$._links.item[0].href"
+      ]
+    }
+  ]
+  
+  }

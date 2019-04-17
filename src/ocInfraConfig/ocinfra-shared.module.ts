@@ -8,6 +8,7 @@ import { LoginComponent } from 'src/app/components/login/login.component';
 import { PagenumberComponent } from 'src/app/components/pagenumber/pagenumber.component';
 import { SearchComponent } from 'src/app/components/search/search.component';
 import { DefaultCustomFactory } from 'src/app/factories/defaultCustomFactory';
+import { FooterComponent } from 'src/app/components/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -16,9 +17,9 @@ import { DefaultCustomFactory } from 'src/app/factories/defaultCustomFactory';
     CommonModule
   ],
   // tslint:disable-next-line:max-line-length
-  declarations: [LoginComponent,PagenumberComponent,SearchComponent],
+  declarations: [LoginComponent,PagenumberComponent,SearchComponent,FooterComponent],
   // tslint:disable-next-line:max-line-length
-  exports: [LoginComponent,PagenumberComponent,SearchComponent],
+  exports: [LoginComponent,PagenumberComponent,SearchComponent,FooterComponent],
   providers: [
     CommonService,
     DefaultCustomFactory

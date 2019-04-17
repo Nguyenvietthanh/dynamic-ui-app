@@ -38,5 +38,11 @@ export class DefaultCustomFactory  {
         console.log(this.resourceService.getHrefByAliasName('insured'));
     }
 
+    public postNewClient(){
+        this.apiCallerService.post(AppConfig.hostURL + 'quotes').subscribe(response => {
+            console.log(response);
+        });;
+
+    }
 
 }

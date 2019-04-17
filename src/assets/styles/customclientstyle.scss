@@ -78,19 +78,19 @@ label.mat-form-field-label.mat-empty.mat-form-field-empty {
     background-position-x: center;
     background-position-y: 40%;
     padding-bottom: 10%;
-    margin-top: 36%!important;
+    margin-top: 5%!important;
 }
 .autoText{
-    margin-top: 53em;
+    margin-top: 28em;
     padding-left: 29em;
     
 }
 .annualLabel{
-    margin-top: 2em!important;
+    margin-top: 1em!important;
     background-color: white;
     border-radius: 20px;
     margin-bottom: -60px;
-    background-image: url("./images/browser.png");
+    background-image: url("./images/income.png");
     background-repeat: no-repeat, no-repeat;
     background-position-x: center;
     background-position-y: 40%;
@@ -98,39 +98,48 @@ label.mat-form-field-label.mat-empty.mat-form-field-empty {
     
 }
 .annualText{
-    margin-top: 23em;
+    margin-top: 25em;
     margin-left: 30em;
 }
 .ResidentLable{
-    margin-top: 4em!important;
+    margin-top: 2% !important;
     background-color: white;
     border-radius: 20px;
     margin-bottom: -60px;
-    background-image: url("./images/browser.png");
+    background-image: url("./images/resident.png");
     background-repeat: no-repeat, no-repeat;
     background-position-x: center;
     background-position-y: 40%;
     padding-bottom: 10%;
 
+}
+.residentText{
+    margin-top: 24em;
+    margin-left: 22em;
 }
 .smokeLabel{
-    margin-top: 28em!important;
+    margin-top: 4%!important;
     background-color: white;
     border-radius: 20px;
     margin-bottom: -60px;
-    background-image: url("./images/browser.png");
+    background-image: url("./images/smoke.png");
     background-repeat: no-repeat, no-repeat;
     background-position-x: center;
     background-position-y: 40%;
     padding-bottom: 10%;
 
 }
+.smokeText{
+    margin-top: 26em;
+    margin-left: 31em;
+    z-index: 10;
+}
 .sumLabel{
-    margin-top: 52em!important;
+    margin-top: 2em!important;
     background-color: white;
     border-radius: 20px;
     margin-bottom: -60px;
-    background-image: url("./images/browser.png");
+    background-image: url("./images/sum.png");
     background-repeat: no-repeat, no-repeat;
     background-position-x: center;
     background-position-y: 40%;
@@ -138,7 +147,7 @@ label.mat-form-field-label.mat-empty.mat-form-field-empty {
 
 }
 .sumText{
-margin-top: 83em;
+margin-top: 26em;
 margin-left: 29em;
 
 }
@@ -146,6 +155,11 @@ margin-left: 29em;
     margin-top: 23em;
     margin-left: 33em;
 }
+.footerdesign{
+    margin-top: 8em;
+    margin-bottom: -8em;
+}
+
 
 
 
