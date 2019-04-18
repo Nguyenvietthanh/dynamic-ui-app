@@ -27,10 +27,7 @@ export class LoginComponent implements OnInit,OnDestroy {
     else {
       let dialogRef = this.dialog.open(MessageComponent);
       dialogRef.afterClosed().subscribe(result => {
-        // NOTE: The result can also be nothing if the user presses the `esc` key or clicks outside the dialog
-        if (result == 'confirm') {
-          console.log('Unregistered');
-        }
+       
       })
      
     }

@@ -27,7 +27,7 @@
                     "case": "_EDIT",
                     "factoryName": "defaultCustomFactory",
                     "icon": "fa fa-pencil-square-o",
-                    "method": "test",
+                    "method": "getDetailquote",
                     "value": "edit"
                    }
 

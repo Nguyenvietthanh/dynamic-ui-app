@@ -22,12 +22,12 @@ export class DefaultCustomFactory  {
         console.log('Default app level methods');
     }
 
-    public async test(paramsomb) {
+    public getDetailquote(paramsomb) {
        //console.log(paramsomb) 
        const customParams: any = {};    
             const quoteDetails = paramsomb.href;
             customParams.alias="quoteDetails";
-            this.apiCallerService.get(quoteDetails).subscribe(async res => {
+            this.apiCallerService.get(quoteDetails).subscribe( res => {
             this.resourceService.updateCreateAliasName('quoteDetails', quoteDetails, true);
             this.resourceService.getHrefByAliasName('quoteDetails');
             OcInfraModule.AppInjector.get(NavigationService).navigateTo('screen/clientDetails',quoteDetails,customParams.alias); 

@@ -47,6 +47,8 @@ export class SearchComponent implements OnInit {
       .subscribe(response => {
         console.log(AppConfig.hostURL + 'quotes' + optionParams);
         this.paginationService.pageNumber = 1;
+        this.quoteNumber ='';
+         this.distributorId = '';
       });
 
   }
